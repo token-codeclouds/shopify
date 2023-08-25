@@ -1,0 +1,27 @@
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit exercitationem placeat iure doloremque officia, doloribus perspiciatis provident consectetur, neque libero suscipit quia expedita rerum ducimus magnam totam, aliquam dolorem sunt.
+
+<h1>{{ section.settings.customText }}</h1>
+
+
+{% schema %}
+  {
+    "name": "Custom Heading Section",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "text",
+        "id": "customText",
+        "label": "Custom Heading Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Heading Section"
+      }
+    ]
+  }
+{% endschema %}
